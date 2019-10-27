@@ -90,6 +90,6 @@ ENGINE=MyISAM DEFAULT CHARSET=latin1;
 COMMIT;
 
 INSERT INTO `veiculo` (`id`, `marca`, `ano`, `modelo`, `cor`, `potencia`, `quilometragem`, `cambio`, `portas`, `placa`, `troca`, `preco`, `tipo`, `particular`, `revenda`, `seminovo`, `0km`) VALUES (NULL, 'Fiat', '2017-02-02', 'Palio', 'vermelho', '1.0', '70.000 KM', 'Manual', '4', 'BTN-120', '1', '15000.00', 'C', '1', '0', '1', '0');
-INSERT INTO `acessorio` (`id`, `nome`, `decricao`, `preco`) VALUES (NULL, 'ABS', 'Freio ABS', NULL);
+INSERT INTO `acessorio` (`id`, `nome`, `descricao`, `preco`) VALUES (NULL, 'ABS', 'Freio ABS', NULL);
 
 SET FOREIGN_KEY_CHECKS=1;

@@ -135,3 +135,5 @@
       Rota:
       
          http://localhost/api-venda-veiculos/web/api/acessorioveiculo/save
+
+ Migrations (informações do banco de dados estão na seguinte pasta: banco/migrations) 
