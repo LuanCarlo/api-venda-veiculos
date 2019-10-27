@@ -1,0 +1,82 @@
+<div class="aside-wrap" style="height: 100%;">
+  <!-- if you want to use a custom scroll when aside fixed, use the slimScroll
+    <div class="navi-wrap" ui-jq="slimScroll" ui-options="{height:'100%', size:'8px'}">
+  -->
+  <div class="navi-wrap">
+    <!-- user -->
+    <div class="clearfix hidden-xs text-center m-b-n" id="aside-user">
+      <div class="dropdown wrapper" dropdown>
+        <a ui-sref="app.page.profile">
+          <span class=" m-l-n">
+            <img src="" class="" alt="...">
+          </span>
+        </a>
+        <!--<a href class="dropdown-toggle hidden-folded" dropdown-toggle>
+          <span class="clear">
+            <span class="block m-t-sm">
+              <strong class="font-bold text-lt">Luan Carlo</strong>
+              <b class="caret"></b>
+            </span>
+            <span class="text-muted text-xs block">Você está aqui: Análise de Risco</span>
+          </span>
+        </a>-->
+          <ul class="list-group no-bg no-borders pull-in text-left m-b-n">
+              <li class="divider"></li>
+              <li class="list-group-item">
+                  <a herf class="pull-left thumb-sm avatar m-r">
+                      <img src="assets/img/user.png" alt="..." class="img-circle">
+                      <i class="on b-white bottom"></i>
+                  </a>
+                  <div class="clear">
+                      <div><a href>{{session.session.NOME}}</a></div>
+                      <!--<small class="text-muted"><i class="fa fa-group"></i> {{session.session.PERFILID}}</small>-->
+                  </div>
+              </li>
+          </ul>
+        <!-- dropdown -->
+        <ul class="dropdown-menu animated fadeInRight w hidden-folded">
+          <li class="wrapper b-b m-b-sm bg-info m-t-n-xs">
+            <span class="arrow top hidden-folded arrow-info"></span>
+            <div>
+              <p>300mb of 500mb used</p>
+            </div>
+            <progressbar value="60" type="white" class="progress-xs m-b-none dker"></progressbar>
+          </li>
+          <li>
+            <a href>Settings</a>
+          </li>
+          <li>
+            <a ui-sref="app.page.profile">Profile</a>
+          </li>
+          <li>
+            <a href>
+              <span class="badge bg-danger pull-right">3</span>
+              Notifications
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a ui-sref="access.signin">Logout</a>
+          </li>
+        </ul>
+        <!-- / dropdown -->
+      </div>
+      <div class="line dk hidden-folded"></div>
+    </div>
+    <!-- / user -->
+
+      <div class="divider"></div>
+
+      <div class="input-group wrapper m-t-n">
+          <span class="input-group-addon input-sm"><i class="fa fa-search"></i></span>
+          <input type="text" class="form-control input-sm" placeholder="Filtrar módulo" ng-model="queryModulo">
+      </div>
+
+    <!-- nav -->
+    <nav ui-nav class="navi m-t-sm" style="margin-bottom: 60px;" ng-include="'src/ui/views/menu.html'"></nav>
+    <!-- nav -->
+
+
+    <!-- / aside footer -->
+  </div>
+</div>

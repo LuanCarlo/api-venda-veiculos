@@ -1,0 +1,54 @@
+.position-search {
+    position: absolute;
+    width: 70%;
+    margin-left: 110px;
+    margin-top: 28px;
+    z-index: 1000;
+}
+
+
+.color-widget{
+    background-color:#5C6BC0;
+    color: #ffffff;
+}
+
+.color-widget-success{
+    background-color:#4CAF50;
+    color: #ffffff;
+}
+
+.color-widget-danger{
+    background-color:#F44336;
+    color: #ffffff;
+}
+
+.color-widget-warning{
+    background-color:#FF5722;
+    color: #ffffff;
+}
+.color-widget-info{
+    background-color:#00B0FF;
+    color: #ffffff;
+}
+
+.color-widget-black{
+    background-color:#000000;
+    color: #ffffff;
+}
+
+.color-widget-white{
+    background-color:#ffffff;
+    color: #000000;
+}
+.label-fechado {
+    background-color: #009688;
+}
+
+.label-aguardando {
+    background-color: #BDBDBD;
+}
+
+
+.label-rejeitado {
+    background-color: #FF9800;
+}

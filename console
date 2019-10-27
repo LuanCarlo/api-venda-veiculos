@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__.'/vendor/autoload.php';
+
+set_time_limit(0);
+
+use Symfony\Component\Console\Input\ArgvInput;
+
+$input = new ArgvInput();
+$env = $input->getParameterOption(array('--env', '-e'), getenv('SYMFONY_ENV') ?: 'dev');
+
+$app = new \Singular\Application(array(
+    "base_dir"=>__DIR__,
+    "web_dir"=>__DIR__."/web",
+    "src_dir" => __DIR__."/web/src",
+    "deploy_dir" => "/web/files",
+    "env"=>'prod'
+
+
+));
+
+$console = require __DIR__.'/bin/console.php';
+$console->run();

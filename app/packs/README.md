@@ -1,0 +1,1 @@
+Definição e inicialização de pacotes da aplicação.

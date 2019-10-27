@@ -1,0 +1,82 @@
+.list-group-item{
+    border-color: rgba(0,0,0,0.1)!important;
+}
+
+.list-group label{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.list-group-item.required:after {
+    color: #f55753;
+    content: "*";
+    font-family: arial;
+    font-size: 18px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+
+.form-group.required:after {
+    color: #f55753;
+    content: "Obrigatório";
+    font-family: arial;
+    font-size: 9px;
+    position: absolute;
+    right: 18px;
+    top: 4px;
+}
+
+/*.list-group-item input, .list-group-item select{*/
+    /*border-color: transparent;*/
+    /*border-width: 0;*/
+/*}*/
+
+.list-group .form-control{
+    padding-left: 0px;
+}
+
+.list-group-item.focused{
+    background-color: #f0f0f0 !important;
+}
+
+.list-group-item.focused .form-control{
+    background-color: transparent !important;
+}
+
+.btn-upload {
+    position: relative;
+    overflow: hidden;
+}
+.btn-upload input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translate(-300px, 0) scale(4);
+    -webkit-transform: translate(-300px, 0) scale(4);
+    -ms-transform: translate(-300px, 0) scale(4);
+    -o-transform: translate(-300px, 0) scale(4);
+    font-size: 23px;
+    direction: ltr;
+    cursor: pointer;
+}
+* html .btn-upload {
+    line-height: 24px;
+    margin: 1px -3px 0 0;
+}
+* + html .btn-upload {
+    padding: 2px 15px;
+    margin: 1px 0 0 0;
+}
+
+.form-control{
+    height: 37px;
+}
+
+.input-group-btn .btn{
+    height: 37px;
+}

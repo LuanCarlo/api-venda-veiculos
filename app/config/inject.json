@@ -1,0 +1,9 @@
+{
+  "inject.vendor": "assets/lib",
+  "inject.css": "assets/css",
+  "inject.ui": "src/ui",
+  "inject.login": "src/login",
+  "inject.secure": "src/secure",
+  "injector.compile": false,
+  "injector.minify": false
+}

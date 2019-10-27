@@ -1,0 +1,7 @@
+{
+  "_priority": 30,
+  "sendgrid.user": "",
+  "sendgrid.pass": "",
+  "mail.from": "",
+  "mail.fromName": "seminovos"
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="br" ng-app="app.login">
+<head>
+    <meta charset="utf-8" />
+    <title>>API Venda de Veículos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    [[injector.inject("css","css",false)]]
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300,300italic,500italic|Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+</head>
+<body ng-controller="AppCtrl" ui-pages>
+<toaster-container></toaster-container>
+
+<div class="app" id="app" ng-class="{'app-header-fixed':app.settings.headerFixed, 'app-aside-fixed':app.settings.asideFixed, 'app-aside-folded':app.settings.asideFolded, 'app-aside-dock':app.settings.asideDock, 'container':app.settings.container}" ui-view></div>
+
+
+
+<!-- App -->
+
+[[injector.inject("vendor")]]
+[[injector.inject("ui")]]
+[[injector.inject("login")]]
+</body>
+</html>

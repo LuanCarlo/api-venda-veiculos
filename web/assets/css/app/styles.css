@@ -1,0 +1,98 @@
+body {
+    font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.42857143;
+    color: #58666e;
+    background-color: transparent;
+}
+
+.app:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: inherit;
+    background-color: #f0f3f4;
+    border: inherit;
+    opacity: .35;
+    content: "";
+}
+
+.grid-table{
+    font-size: 13px !important;
+    table-layout: fixed;
+}
+
+.grid-table td{
+    font-weight: normal;
+    font-size: 12px !important;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ff-roboto{
+    font-family: 'Roboto', 'PT Sans', sans-serif;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.fix-content-width{
+    /*width: 81.5%;*/
+}
+
+.p-r-lg{
+    padding-right: 25px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.line-text{
+    text-decoration: line-through !important;
+}
+
+.line-text-none{
+    text-decoration: initial !important;
+}
+
+.link{
+    color: blue !important;
+    text-decoration: underline;
+}
+
+.bg-orange {
+    color: rgba(0,0,0,0.87);
+    background-color: #FF9800;
+}
+
+.easypie{
+    position: relative;
+    text-align: center;
+}
+
+.percent {
+    position: absolute;
+    display: inline-block;
+    padding-top: 60px;
+    padding-left: 15px;
+    z-index: 2;
+    text-align: center;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.panel-success .panel-heading {
+    background-color: #dff0d8 !important;
+}
+
+.panel-danger .panel-heading {
+    background-color: #f2dede !important;
+}

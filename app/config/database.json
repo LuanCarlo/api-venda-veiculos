@@ -1,0 +1,8 @@
+{
+  "db.name": "seminovos",
+  "db.host": "127.0.0.1",
+  "db.user": "root",
+  "db.pass": "",
+  "db.charset": "utf8mb4",
+  "mysql.bin": "/Applications/MAMP/Library/bin/mysql"
+}

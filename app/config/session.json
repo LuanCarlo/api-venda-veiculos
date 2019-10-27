@@ -1,0 +1,8 @@
+{
+  "session.storage.options": {
+    "name": "API",
+    "id": "API"
+  },
+  "session.name": "API",
+  "security.salt": "api"
+}

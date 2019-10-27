@@ -1,0 +1,61 @@
+<div class="container w-xxl w-auto-xs" ng-init="app.settings.container = false;">
+    <a href class="navbar-brand block m-t ff-roboto">{{app.name}}</a>
+    <div class="m-b-lg">
+        <form name="form" class="form-validation">
+
+            <div class="card">
+                <div class="card-heading indigo primary dker">
+                    <h2 class="text-white">Crie sua conta agora</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row row-sm">
+                        <md-input-container class="md-icon-float col-sm-12 m-t-md m-b-sm">
+                            <label>Nome</label>
+                            <md-icon>perm_identity</md-icon>
+                            <input ng-model="user.name" autofocus name="name" type="text" required>
+                            <div ng-messages="form.name.$error"  >
+                                <div ng-message-exp="['required']">
+                                    Você precisa informar o seu nome
+                                </div>
+                            </div>
+                        </md-input-container>
+
+                        <md-input-container class="md-icon-float col-sm-12 m-t-md m-b-sm">
+                            <label>Email</label>
+                            <md-icon>email</md-icon>
+                            <input ng-model="user.email" name="email" type="email" required ng-pattern="/^.+@.+\..+$/" ng-required="true">
+                            <div ng-messages="form.email.$error"  >
+                                <div ng-message-exp="['required',  'pattern']">
+                                    Você precisa informar um endereço de email válido
+                                </div>
+                            </div>
+                        </md-input-container>
+                        <md-input-container class="md-icon-float col-sm-12 m-t-md m-b-sm">
+                            <label>Senha</label>
+                            <md-icon>lock</md-icon>
+                            <input ng-model="user.pass" name="pass" type="password" ng-required="true">
+                            <div ng-messages="form.pass.$error" role="alert">
+                                <ng-message when="required">
+                                    Você precisa informar a senha
+                                </ng-message>
+                            </div>
+                        </md-input-container>
+                    </div>
+                </div>
+            </div>
+            <md-checkbox ng-model="user.agree" required aria-label="Aceito os termos de uso">
+                Aceito os termos de uso
+            </md-checkbox>
+            <div class="clear"></div>
+            <md-button class="md-primary btn-block md-raised m-n"  ng-click="signup()" ng-disabled="form.$invalid">
+                Registrar
+            </md-button>
+            <div class="line line-dashed"></div>
+            <p class="text-center"><small>Já tm uma conta?</small></p>
+            <md-button class="btn-block md-raised m-n"  ui-sref="login" >
+                Ir para o login
+            </md-button>
+
+        </form>
+    </div>
+</div>

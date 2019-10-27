@@ -1,0 +1,98 @@
+      <!-- navbar header -->
+      <div class="navbar-header {{app.settings.navbarHeaderColor}}">
+        <button class="pull-right visible-xs dk" ui-toggle-class="show" data-target=".navbar-collapse">
+          <i class="glyphicon glyphicon-cog"></i>
+        </button>
+        <button class="pull-right visible-xs" ui-toggle-class="off-screen" data-target=".app-aside" ui-scroll-to="app">
+          <i class="glyphicon glyphicon-align-justify"></i>
+        </button>
+        <!-- brand -->
+        <a href="#/" class="navbar-brand text-lt">
+          <!--<i class="fa fa-usd text-white"></i>-->
+          <!--<img src="img/logo.png" alt="." class="hide">-->
+          <span class="hidden-folded m-l-xs text-white">{{app.name}} - {{app.version}}</span>
+        </a>
+        <!-- / brand -->
+      </div>
+      <!-- / navbar header -->
+
+      <!-- navbar collapse -->
+      <div class="collapse pos-rlt navbar-collapse box-shadow {{app.settings.navbarCollapseColor}}">
+          <!--<ul class="nav navbar-nav">
+              <li class="dropdown" dropdown ng-repeat="app in session.menu">
+                  <a href class="dropdown-toggle" dropdown-toggle>
+                      <span class="">{{app.aplicacao}}</span>
+                  </a>
+                  <ul class="dropdown-menu animated fadeIn" style="-vendor-animation-duration: 0.2s;-vendor-animation-delay: .5s;">
+                      <li ng-repeat="mod in app.modules">
+                          <a ui-sref="{{mod.ui_sref}}">
+                              <i class="{{mod.icon_cls}} icon"></i>
+                              <span class="text-sm">{{mod.modulo}}</span>
+                          </a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>-->
+
+
+        <!-- nabar right -->
+        <ul class="nav navbar-nav navbar-right">
+          <!--<li class="dropdown" dropdown>
+            <a href class="dropdown-toggle" dropdown-toggle>
+              <i class="icon-bell fa-fw"></i>
+              <span class="visible-xs-inline">Notificações</span>
+              <span class="badge badge-sm up bg-danger pull-right-xs" ng-if="notification.notifications.length > 0">{{notification.notifications.length}}</span>
+            </a>
+            <!-- dropdown
+            <div class="dropdown-menu w-xl animated fadeIn" style="-vendor-animation-duration: 0.2s;-vendor-animation-delay: .5s;">
+              <div class="panel bg-white">
+                <div class="panel-heading b-light bg-light">
+                  <strong ng-if="notification.notifications.length > 1">Você tem  <span>{{notification.notifications.length}}</span> notificações</strong>
+                  <strong ng-if="notification.notifications.length == 1">Você tem  <span>1</span> notificação</strong>
+                  <strong ng-if="notification.notifications.length == 0">Você não tem notificações</strong>
+                </div>
+                <div class="list-group">
+                  <a href class="media list-group-item" ng-repeat="note in notification.notifications">
+                    <span class="media-body block m-b-none">
+                      {{note.message}}<br>
+                      <small class="text-muted">{{fromNow(note.date)}}</small>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel-footer text-sm" ng-if="notification.notifications.length > 1">
+                  <a href class="pull-right"><i class="fa fa-cog"></i></a>
+                  <a href="#notes" data-toggle="class:show animated fadeInRight">Ver todas as notificações</a>
+                </div>
+              </div>
+            </div>
+            <!-- / dropdown
+          </li>-->
+         <!-- <li class="dropdown" dropdown>
+            <a href class="clear" >
+              <span class="thumb-sm avatar pull-left m-t-n-sm m-b-n-sm m-l-sm">
+                <img src="{{user.avatar || 'assets/img/user.png'}}" alt="...">
+                <i class="on md b-white bottom"></i>
+              </span>
+              <span class="hidden-sm hidden-md">
+                  &nbsp;{{session.session.cpf || 'Luan Carlo'}}
+              </span>
+            </a>
+          </li>-->
+            <li>
+                <a href class="dropdown-toggle clear" ng-click="changePass()">
+                    <i class="fa fa-lock"></i>
+                    <span class="hidden-sm hidden-md">Alterar minha senha</span>
+                </a>
+            </li>
+            <li>
+                <a href class="dropdown-toggle clear" ng-click="logout()">
+                    <i class="fa fa-sign-out"></i>
+                    <span class="hidden-sm hidden-md">Sair</span>
+                </a>
+            </li>
+
+        </ul>
+        <!-- / navbar right -->
+
+      </div>
+      <!-- / navbar collapse -->

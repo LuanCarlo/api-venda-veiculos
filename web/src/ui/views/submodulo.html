@@ -1,0 +1,16 @@
+<li ng-repeat="mod in modulos">
+    <a class="auto" ng-if="mod.modulos.length > 0">
+              <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span>
+
+        <i class="{{mod.icon_cls}} icon"></i>
+        <span class="text-sm">{{mod.modulo}}</span>
+    </a>
+    <a ui-sref="{{mod.ui_sref}}" class="auto" ng-if="mod.modulos.length == 0">
+        <i class="{{mod.icon_cls}} icon"></i>
+        <span class="text-sm">{{mod.modulo}}</span>
+    </a>
+    <ul class="nav nav-sub dker" ng-if="mod.modulos.length > 0" ng-init="modulos = mod.modulos; name = mod.modulo;" ng-include="'src/ui/views/submodulo.html'"></ul>
+</li>

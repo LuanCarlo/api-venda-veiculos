@@ -1,0 +1,7 @@
+[2019-10-27 09:53:37] myapp.INFO: Matched route "api.controller.veiculo.load" (parameters: "_controller": "api.controller.veiculo:load", "_route": "api.controller.veiculo.load") [] []
+[2019-10-27 09:53:37] myapp.INFO: > POST /api-venda-veiculos/web/api/veiculo/load [] []
+[2019-10-27 09:53:37] myapp.INFO: > POST /api-venda-veiculos/web/api/veiculo/load [] []
+[2019-10-27 09:53:37] myapp.DEBUG: SELECT t.* FROM veiculo t WHERE (1 = 1) AND (t.ano >= "2016-01-26") AND (t.ano < "2019-01-30") AND (t.marca like :marca) {"params":{"marca":"%Fiat%"},"types":[]} []
+[2019-10-27 09:53:37] myapp.DEBUG: SELECT t.* FROM veiculo t WHERE (1 = 1) AND (t.ano >= "2016-01-26") AND (t.ano < "2019-01-30") AND (t.marca like :marca) LIMIT 200 OFFSET 0 {"params":{"marca":"%Fiat%"},"types":[]} []
+[2019-10-27 09:53:37] myapp.INFO: < 200 [] []
+[2019-10-27 09:53:37] myapp.INFO: < 200 [] []

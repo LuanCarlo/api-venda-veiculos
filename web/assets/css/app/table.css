@@ -1,0 +1,21 @@
+.td-wrap{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.red-column{
+    background-color: #E53935 !important;
+    color: #fff !important;
+
+}
+
+.green-column{
+    background-color: #43A047 !important;
+    color: #fff !important;
+}
+
+.orange-column{
+    background-color: #FF9800 !important;
+    color: #fff !important;
+}

@@ -1,0 +1,47 @@
+<div class="container w-xxl w-auto-xs" ng-init="app.settings.container = false;">
+    <a href class="block m-t-lg text-center m-b-lg">
+        <img src="" >
+    </a>
+  <div class="m-b-lg">
+    <form name="form" class="form-validation" novalidate ng-submit="login()" autocomplete="off">
+
+        <div class="card">
+            <div class="card-heading green green-900 dker">
+                <h2 class="text-white">Login</h2>
+            </div>
+            <div class="card-body">
+                <div class="row row-sm">
+                    <md-input-container class="md-icon-float col-sm-12 m-t-md m-b-sm">
+                        <label>Email</label>
+                        <md-icon><i class="fa fa-envelope"></i></md-icon>
+                        <input ng-model="user.email" autofocus name="email" type="email" required ng-required="true">
+                        <div ng-messages="form.email.$error" ng-if="checkField(form.email)"  >
+                            <ng-message when="required">Preencha o campo Email</ng-message>
+                            <ng-message when="email">Email Inválido</ng-message>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="md-icon-float col-sm-12 m-t-md">
+                        <label>Senha</label>
+                        <md-icon><i class="fa fa-lock"></i></md-icon>
+                        <input ng-model="user.senha" name="senha" type="password" required>
+                        <div ng-messages="form.senha.$error" role="alert" ng-if="checkField(form.senha)" >
+                            <ng-message when="required">O campo senha precisa ser preenchido</ng-message>
+                        </div>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <md-button class="btn-block md-raised m-n" style="" type="submit"  ng-disabled="isWaiting">
+            Entrar
+        </md-button>
+
+        <!--<div class="text-center m-t m-b"><a ui-sref="recover">Esqueci a senha</a></div>-->
+        <div class="line line-dashed"></div>
+        <md-button class="btn-block md-raised m-n"  ui-sref="recover" ng-disabled="isWaiting">
+            Esqueci minha senha
+        </md-button>
+
+    </form>
+  </div>
+</div>

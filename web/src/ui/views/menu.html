@@ -1,0 +1,26 @@
+<!-- list -->
+<ul class="nav" ng-repeat="app in session.menu">
+    <li class="hidden-folded padder m-t-n m-b-xxs text-muted text-xs" ng-if="results.length > 0">
+        <span>{{app.aplicacao}}</span>
+    </li>
+
+    <li ng-class="{'active': mod.menu == selectedModule}" ng-repeat="mod in app.modules | filter:queryModulo as results">
+        <a class="auto" ng-if="mod.modulos.length > 0">
+              <span class="pull-right text-muted">
+                <i class="fa fa-fw fa-angle-right text"></i>
+                <i class="fa fa-fw fa-angle-down text-active"></i>
+              </span>
+
+            <i class="{{mod.icon_cls}} icon"></i>
+            <span class="text-sm">{{mod.modulo}}</span>
+        </a>
+        <a ui-sref="{{mod.ui_sref}}" class="auto" ng-if="mod.modulos.length == 0">
+            <i class="{{mod.icon_cls}} icon"></i>
+            <span class="text-sm">{{mod.modulo}}</span>
+        </a>
+        <ul class="nav nav-sub dk" ng-if="mod.modulos.length > 0" ng-include="'src/ui/views/submodulo.html'" ng-init="modulos = mod.modulos; name = mod.modulo;"></ul>
+    </li>
+
+    <li class="line dk" ng-if="!$last && results.length > 0" ></li>
+</ul>
+<!-- / list -->

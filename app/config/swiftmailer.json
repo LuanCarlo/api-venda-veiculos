@@ -1,0 +1,6 @@
+{
+    "mailer.host": "",
+    "mailer.port": "587",
+    "mailer.username": "",
+    "mailer.password": ""
+}

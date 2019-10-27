@@ -1,0 +1,1 @@
+Diretório onde são armazenados os templates twig da aplicação.

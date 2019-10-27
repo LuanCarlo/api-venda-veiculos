@@ -1,0 +1,32 @@
+<!-- navbar -->
+<div data-ng-include=" 'src/ui/views/header.html' " class="app-header navbar">
+</div>
+<!-- / navbar -->
+
+<!-- menu -->
+<div data-ng-include=" 'src/ui/views/aside.html' " class="app-aside hidden-xs {{app.settings.asideColor}}">
+</div>
+<!-- / menu -->
+
+<!-- content -->
+<div class="app-content">
+    <div ui-butterbar></div>
+    <!--<a href class="off-screen-toggle hide" ui-toggle-class="off-screen" data-target=".app-aside" ></a>-->
+    <div class="app-content-body app-content-full" ui-view></div>
+</div>
+<!-- /content -->
+
+<!-- footer -->
+<div class="app-footer wrapper b-t bg-light text-xs text-muted">
+    <!--<span class="pull-right">-->
+        <!--Parceria:-->
+        <!--<img src="assets/img/logo_eu_flag.gif" height="32">-->
+        <!--<img src="assets/img/dh.png" height="32">-->
+        <!--<a href ui-scroll-to="app" class="m-l-sm text-muted"><i class="fa fa-long-arrow-up"></i></a>-->
+    <!--</span>-->
+    <span class="text-muted text-xs">&copy; 2019 - Todos os direitos reservados.</span>
+</div>
+<!-- / footer -->
+
+<!--<div data-ng-include=" 'src/ui/views/settings.html' " class="settings panel panel-default">-->
+<!--</div>-->
