@@ -1,6 +1,6 @@
 ### API  "Venda de Veículos"
  
- Desenvolvida para a utilização em sites e aplicativos para a vendas de veículos, como carro, caminhões e motocicletas.
+ Desenvolvida para a utilização em sites e aplicativos para a vendas de veículos como carro, caminhões e motocicletas.
  
  __ __ 
  
