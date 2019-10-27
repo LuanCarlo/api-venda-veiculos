@@ -127,4 +127,31 @@ class Veiculo extends SingularController
         ));
     }
 
+    /**
+     * Remove um veiculo.
+     *
+     * @Route(method="post")
+     *
+     * @param Request $request
+     *
+     * @return JsonResponse
+     */
+    public function delete(Request $request)
+    {
+        $app = $this->app;
+
+        $store = $this->getStore();
+        $id = $request->get('id');
+
+        $success = true;
+
+        if (!$store->remove($id)){
+            $success = false;
+        }
+
+        return $app->json(array(
+            'success' => $success
+        ));
+    }
+
 }
