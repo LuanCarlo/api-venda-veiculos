@@ -4,16 +4,16 @@
  
  __ __ 
  
-  ###<h3> Introdução </h3>
+  <h3> Introdução </h3>
   
   Esta é uma API Restful criada em PHP, utilizando Singular Framework e Banco de dados MySQL.
   
   __ __ 
   
-  ###<h3> Funcionamento </h3> 
+  <h3> Funcionamento </h3> 
   
-  Rota para listar todos os veiculos:<br>
-  Adicionar filtros em formato Json no formato,<br>
+  **1.** Rota para listar todos os veículos:<br>
+  Adicionar filtros em formato Json,<br>
   Ex:<br>
   <pre>
   {
@@ -30,9 +30,9 @@
      http://localhost/api-venda-veiculos/web/api/veiculo/load
   
   
-  Rota para listar apenas um veículo com mais detalhes:<br>
+  **2.** Rota para listar apenas um veículo com mais detalhes:<br>
   Passando o id no formato Json:
-  EX:
+  Ex:<br>
   <pre>
   {
         "id" : "1"
@@ -42,9 +42,9 @@
   
        http://localhost/api-venda-veiculos/web/api/veiculo/get
 
-  Rota para criar um novo veículo:<br>
-    Passando o informações no formato Json:
-    EX:
+  **3.** Rota para criar um novo veículo:<br>
+    Passando as informações no formato Json,
+    Ex:<br>
     <pre>
   {
           "marca": "Honda",
@@ -70,9 +70,9 @@
          http://localhost/api-venda-veiculos/web/api/veiculo/save
 
 
- Rota para editar um veículo:<br>
-    Passando o informações no formato Json (com adição do login):
-    EX:
+ **4.** Rota para editar um veículo:<br>
+    Passando as informações no formato Json (com adição do login):
+    Ex:<br>
     <pre>
   {
           "id" : "2"
@@ -100,9 +100,9 @@
 
 
 
-  Rota para deletar um veículo:<br>
-    Passando o id no formato Json:
-    EX:
+  **5.** Rota para deletar um veículo:<br>
+    Passando o id no formato Json,
+    Ex: <br>
     <pre>
     {
           "id" : "1"
@@ -112,9 +112,9 @@
   
          http://localhost/api-venda-veiculos/web/api/veiculo/delete
 
- Rota para salvar um novo acessorio:<br>
-    Passando o informações no formato Json:
-    EX:
+ **6.** Rota para salvar um novo acessório:<br>
+    Passando as informações no formato Json,
+    Ex:<br>
     <pre>
   {
       "nome": "ABS",
@@ -124,9 +124,9 @@
     
         http://localhost/api-venda-veiculos/web/api/acessorio/save
 
-   Rota para vincular um acessorio a um veículo:<br>
-      Passando o informações no formato Json:
-      EX:
+   **7.** Rota para vincular um acessório a um veículo:<br>
+     Passando as informações no formato Json,
+      Ex: <br>
       <pre>
     {
         "acessorio_id": "1",
@@ -136,4 +136,12 @@
       
          http://localhost/api-venda-veiculos/web/api/acessorioveiculo/save
 
- Migrations (informações do banco de dados estão na seguinte pasta: banco/migrations) 
+__ __
+  
+   <h3> Observações </h3>
+  
+  * Migrations → informações do banco de dados estão na seguinte pasta: banco/migrations
+  
+ __ __ 
+ 
+ 
